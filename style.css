@@ -15,35 +15,90 @@ body > * {
 }
 
 header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: sticky;
+    color: white;
     top: 0;
     background-color:rgb(18, 52, 88);
     height: 15vh;
     width: 100vw;
-    transition: opacity 0.5s ease;
     border-bottom: 3px solid black;
 }
-main{
-    display: flex;
-}
-footer{
-    height: 10vh;
-    background-color: rgb(18, 52, 88);
-    border-top: 3px solid black;
+
+header div.container {
+    font-family: "Permanent Marker", cursive;
+    font-size: 4em;
 }
 
+main{
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+}
+
+h1 {
+    font-family: "Permanent Marker", cursive;
+}
+footer{
+    min-height: 10vh;
+    background-color: rgb(55, 95, 138);
+    border-top: 2px solid black;
+}
+
+.footer_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ;
+    padding-top: 1em;
+    opacity: 0.6;
+    font-size: 0.7em;
+}
 section{
     margin: 2% 3%;
     border: 2px solid rgb(18, 52, 88);
     padding: 2% 5%;
-    border-radius: 5%;
+    border-radius: 10%;
     
 }
+
 .bigcointainer {
     flex-basis: 70%;
 }
 
+img{
+    max-width: 100%;
+    border-radius: 5%;
+}
 .smallcontainer{
     flex-basis: 30%;
-    
+    text-align: center;    
 }
+
+.smallcontainer p{
+    opacity: 0.5;
+    margin-bottom: 0;
+}
+
+li{
+    list-style-position: inside;
+}
+
+hr.dashed {
+    border-top: 1px dashed rgb(212, 201, 190);
+  }
+footer p   {
+    text-align: center;
+    opacity: 0.5;
+    font-size: 0.7em;
+    margin: 0;
+  }
+ 
